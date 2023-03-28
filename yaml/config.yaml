@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config-map
+data:
+  file.conf: |
+    param1=1
+    param2=2
+    paramN=3

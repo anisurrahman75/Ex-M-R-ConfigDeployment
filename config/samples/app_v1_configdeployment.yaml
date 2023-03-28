@@ -1,0 +1,13 @@
+apiVersion: app.tutorial.kubebuilder.io/v1
+kind: ConfigDeployment
+metadata:
+  labels:
+    app.kubernetes.io/name: configdeployment
+    app.kubernetes.io/instance: configdeployment-sample
+    app.kubernetes.io/part-of: ex-m-r-configdeployment
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: ex-m-r-configdeployment
+  name: configdeployment-sample
+spec:
+  configMap: example-configmap
+  # TODO(user): Add fields here
